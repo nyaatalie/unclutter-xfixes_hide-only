@@ -172,7 +172,7 @@ static void idle_cb(EV_P_ ev_timer *w, int revents) {
     cursor_find(&child, &root_x, &root_y);
     if (child) { // not on root
         if (!config.onescreen || active_screen == default_screen)
-            if (!config.ignore_matches || !is_on_ignore_list(child))
+            if (!config.ignore_matches || is_on_ignore_list(child))
                 cursor_hide();
     } else { // on root
         if (!config.exclude_root)
