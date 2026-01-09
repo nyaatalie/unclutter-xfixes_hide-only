@@ -4,6 +4,8 @@
 
 # unclutter-xfixes
 
+Behaviour of `--not` option is flipped.
+
 ## About
 
 This is a rewrite of the popular tool unclutter, but using the x11-xfixes extension. This means that this rewrite doesn't use fake windows or pointer grabbing and hence causes less problems with window managers and/or applications.
